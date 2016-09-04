@@ -1,0 +1,16 @@
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: test
+  username: mtajitsu
+  password: postgres
+  schema_search_path: public
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: postgres
+  username: mtajitsu
+  password: postgres
+  schema_search_path: public
+production:
+  url: <%= ENV['DATABASE_URL'] %>
