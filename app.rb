@@ -9,7 +9,7 @@ ActiveRecord::Base.configurations = spec.stringify_keys
 ActiveRecord::Base.establish_connection(environment.to_sym)
 
 require './models/todo'
-require './todo'
+require './lib/todo'
 
 
 unless ENV['USERNAME'].nil?
